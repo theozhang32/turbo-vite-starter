@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "pnpm run buildprod",
+    "buildprod": "turbo buildprod && node scripts/move-dist.cjs",
+    "buildtest": "turbo buildtest && node scripts/move-dist.cjs",
+    "buildprod:client": "turbo buildprod --filter=gallery-client && node scripts/move-dist.cjs",
+    "buildtest:client": "turbo buildtest --filter=gallery-client && node scripts/move-dist.cjs",
+    "buildprod:admin": "turbo buildprod --filter=gallery-admin && node scripts/move-dist.cjs",
+    "buildtest:admin": "turbo buildtest --filter=gallery-admin && node scripts/move-dist.cjs",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "pnpm": "8.10.5",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0"
+  },
+  "packageManager": "pnpm@8.10.5"
+}

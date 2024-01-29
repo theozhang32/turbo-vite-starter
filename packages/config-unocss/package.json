@@ -1,0 +1,14 @@
+{
+  "name": "@repo/unocss-config",
+  "private": true,
+  "exports": "./index.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@unocss/preset-attributify": "^0.58.4",
+    "@unocss/preset-uno": "^0.58.4"
+  }
+}

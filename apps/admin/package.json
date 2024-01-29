@@ -1,0 +1,27 @@
+{
+  "name": "@repo/admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode=dev",
+    "build": "pnpm run buildprod",
+    "buildprod": "vite build --mode=prod",
+    "buildtest": "vite build --mode=test",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@repo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/unocss-config": "workspace:*",
+    "@types/node": "^20.10.3",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2",
+    "unocss": "^0.58.0",
+    "vite": "^5.0.2"
+  }
+}
