@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+import '@repo/shared/types/vite-env'
 
 interface ImportMetaEnv {
   

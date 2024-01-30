@@ -1,14 +1,18 @@
 {
   "name": "@repo/shared",
   "version": "0.0.0",
-  "exports": "./src/index.ts",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./types/index.ts",
+    "./types/vite-env": "./types/vite-env.d.ts",
+    "./types/global": "./types/global.d.ts"
+  },
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts\""
   },
-  "peerDependencies": {
-    
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",

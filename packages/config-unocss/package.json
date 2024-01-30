@@ -9,6 +9,7 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@unocss/preset-attributify": "^0.58.4",
-    "@unocss/preset-uno": "^0.58.4"
+    "@unocss/preset-uno": "^0.58.4",
+    "unocss": "^0.58.0"
   }
 }

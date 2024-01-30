@@ -1,8 +1,9 @@
+import { type UserConfig } from 'unocss'
 import presetUno from '@unocss/preset-uno'
 import presetAttributify from '@unocss/preset-attributify'
 type Color = string
 
-export const defaultUnocssPresets = [
+export const defaultUnocssPresets: UserConfig['presets'] = [
   presetUno(),
   presetAttributify({
     prefix: 'un-',
